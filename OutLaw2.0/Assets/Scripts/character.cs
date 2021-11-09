@@ -8,7 +8,7 @@ public class character : MonoBehaviour
     private Animator anim;
     private float moveSpeed;
     private float dirX;
-    private bool facingRight = true;
+    //private bool facingRight = true;
     private Vector3 localScale;
 
     private void Start()
@@ -52,7 +52,7 @@ public class character : MonoBehaviour
         rb.velocity = new Vector2(dirX, rb.velocity.y);
     }
 
-    private void LateUpdate()
+    /*private void LateUpdate()
     {
         if (dirX > 0)
             facingRight = true;
@@ -63,5 +63,5 @@ public class character : MonoBehaviour
             localScale.x *= -1;
 
         transform.localScale = localScale;
-    }
+    }*/
 }
